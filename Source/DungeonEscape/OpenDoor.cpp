@@ -30,7 +30,7 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	UE_LOG(LogTemp, Warning, TEXT("%s"), *GetOwner()->GetActorRotation().ToString());
-	//UE_LOG(LogTemp, Warning, TEXT("%f"), *TargetYaw);
+	UE_LOG(LogTemp, Warning, TEXT("%f"), GetOwner()->GetActorRotation().Yaw);
 
 	// float MyFloat = 90.f; // Same as 90.0f. 90.f matches Unreal documentation.
 	// FRotator CurrentRotation = GetOwner()->GetActorRotation();
