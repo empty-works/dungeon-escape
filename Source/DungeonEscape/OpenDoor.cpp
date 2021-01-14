@@ -34,7 +34,7 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 	UE_LOG(LogTemp, Warning, TEXT("%f"), Yaw);
 
 	FRotator OpenDoor(0.f, 0.f, 0.f);
-	OpenDoor.Yaw = FMath::Lerp(Yaw, TargetYaw, 0.3f);
+	OpenDoor.Yaw = FMath::Lerp(Yaw, TargetYaw, 0.02f);
 	GetOwner()->SetActorRotation(OpenDoor);
 
 	// float MyFloat = 90.f; // Same as 90.0f. 90.f matches Unreal documentation.
