@@ -29,5 +29,5 @@ private:
 	float CurrentYaw;
 
 	UPROPERTY(EditAnywhere);
-	float TargetYaw;
+	float TargetYaw = 90.f;
 };
